@@ -1,0 +1,28 @@
+.title {
+  text-align: center;
+}
+body,
+html {
+  height: 50%;
+  width: 50%;
+}
+
+main {
+  display: flex;
+  max-height: 2%;
+}
+
+div {
+  padding: 5px;
+  border: 0.01px solid grey;
+  height: 6%;
+  flex: 0 0 1%;
+}
+
+.dead {
+  background-color: white;
+}
+
+.live {
+  background-color: green;
+}
