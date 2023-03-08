@@ -10,6 +10,11 @@ class Game {
   manageBtn() {
     let btnPlay = document.querySelector("#play");
     btnPlay.addEventListener("click", () => {
+      if (this.playing) {
+        btnPlay.innerHTML = "Run"
+      } else {
+        btnPlay.innerHTML = "Pause"
+      }
       this.playing = !this.playing;
       if (this.playing) this.play();
     });
@@ -41,7 +46,7 @@ class Game {
         }
         cell.goNext();
       });
-    }, 50);
+    }, 10);
   }
 }
 

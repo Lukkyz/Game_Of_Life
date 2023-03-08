@@ -1,15 +1,11 @@
-.title {
-  text-align: center;
-}
-body,
-html {
-  height: 50%;
-  width: 50%;
-}
-
 main {
   display: flex;
   max-height: 2%;
+}
+
+body {
+  height: 50%;
+  margin: auto
 }
 
 div {
@@ -25,4 +21,8 @@ div {
 
 .live {
   background-color: green;
+}
+
+.dead, .live {
+  padding: 10px;
 }
